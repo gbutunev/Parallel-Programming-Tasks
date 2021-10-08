@@ -19,7 +19,7 @@ namespace T1_Chitanka
             List<string> allWords = new List<string>();
             //HashSet<string> distinctWords = new HashSet<string>();
 
-            Regex regex = new Regex(@"\.|,|\?|!|„|“|:|;| — | - | |\t"); //т.е. & т.н.?
+            Regex regex = new Regex(@"\.|,|\?|!|„|“|:|;| — | - | |\t|\(|\)|\[|\]|\*|{|}"); //needs a lot more improvement
             foreach (var line in allLines)
             {
                 string input = line.ToLower();

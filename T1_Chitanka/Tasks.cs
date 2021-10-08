@@ -16,6 +16,7 @@ namespace T1_Chitanka
             stopwatch.Restart();
 
             PrintNumberOfWords(words);
+            PrintShortestWord(words);
             PrintLongestWord(words);
             PrintAverageWordLength(words);
             PrintFiveMostCommonWords(words);
@@ -29,6 +30,7 @@ namespace T1_Chitanka
         {
             List<Thread> threads = new List<Thread>();
             threads.Add(new Thread(PrintNumberOfWords));
+            threads.Add(new Thread(PrintShortestWord));
             threads.Add(new Thread(PrintLongestWord));
             threads.Add(new Thread(PrintAverageWordLength));
             threads.Add(new Thread(PrintFiveMostCommonWords));
@@ -40,6 +42,25 @@ namespace T1_Chitanka
             foreach (var thread in threads) thread.Join();
             stopwatch.Stop();
             return stopwatch.ElapsedMilliseconds;
+        }
+
+        private static void PrintShortestWord(object list)
+        {
+            List<string> words = (List<string>)list;
+
+            int currLength = int.MaxValue;
+            string currWord = string.Empty;
+
+            foreach (string word in words)
+            {
+                if (word.Length < currLength)
+                {
+                    currLength = word.Length;
+                    currWord = word;
+                }
+            }
+
+            Console.WriteLine($"Shortest word is \"{currWord}\" with {currLength} characters");
         }
 
         private static void PrintFiveLeastCommonWords(object list)
