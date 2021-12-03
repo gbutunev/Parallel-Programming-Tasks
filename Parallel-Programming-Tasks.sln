@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T1_Chitanka", "T1_Chitanka\T1_Chitanka.csproj", "{468EB552-CAC3-491C-83DB-58A1106A74D9}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T3_PriceScraper", "T3_PriceScraper\T3_PriceScraper.csproj", "{D12EC8B6-831A-4657-A3D1-951979590A80}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T4_BarSimulator", "T4_BarSimulator\T4_BarSimulator.csproj", "{69F6F000-55CE-481C-A39A-00A068178A86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T5_Area51", "T5_Area51\T5_Area51.csproj", "{48917D6A-9881-4E0D-8643-4A88D16CA6B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{69F6F000-55CE-481C-A39A-00A068178A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69F6F000-55CE-481C-A39A-00A068178A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69F6F000-55CE-481C-A39A-00A068178A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48917D6A-9881-4E0D-8643-4A88D16CA6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48917D6A-9881-4E0D-8643-4A88D16CA6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48917D6A-9881-4E0D-8643-4A88D16CA6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48917D6A-9881-4E0D-8643-4A88D16CA6B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
